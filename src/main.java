@@ -1,5 +1,4 @@
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +12,7 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/xjj.PNG";
+    public static final String SOURCE_FILE = "./resource/cubs.PNG";
     public static final String DESTINATION_FILE = "./resource/out_xjj.PNG";
     private static int imageWidth;
     private static int imageHeight;
@@ -26,11 +25,16 @@ public class main {
             imageWidth = originalImage.getWidth();
             imageHeight = originalImage.getHeight();
 
-            GreyScaler greyScaler=new GreyScaler(originalImage);
-            BufferedImage resultImage=greyScaler.getResultImage();
+            GreyScaler greyScaler = new GreyScaler(originalImage);
+            BufferedImage greyScalerResultImage = greyScaler.getResultImage();
+            int[][] greyScaleMap = greyScaler.getGrayScale();
+
+            StrokeLineDrawer strokeLineDrawer = new StrokeLineDrawer(greyScaleMap, imageWidth, imageHeight);
+
+            BufferedImage stroklines= strokeLineDrawer.getStrokeLineImg();
 
             File outputFile = new File(DESTINATION_FILE);
-            ImageIO.write(resultImage, "PNG", outputFile);
+            ImageIO.write(stroklines, "PNG", outputFile);
         } catch (IOException e) {
         }
     }

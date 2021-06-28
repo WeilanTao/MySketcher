@@ -1,19 +1,28 @@
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
+/**
+ * @File
+ * @Author Emily Weilan Tao
+ * @Date Jun 27, 2021
+ */
 public class GreyScaler {
 
     private static final double RGB_LIMIT = 255.00;
-    private BufferedImage resultImage;
     private static int imageWidth;
     private static int imageHeight;
+    private static int[][] grayScaleMap;//row,col
+    private BufferedImage resultImage;
 
 
     public GreyScaler(BufferedImage originalImage) {
         imageWidth = originalImage.getWidth();
         imageHeight = originalImage.getHeight();
         resultImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_4BYTE_ABGR);
+        grayScaleMap = new int[imageWidth][imageHeight];
+
         grayScaleImg(originalImage, resultImage);
+
     }
 
     /**
@@ -26,7 +35,11 @@ public class GreyScaler {
         for (int i = 0; i < imageWidth; i++) {
             for (int j = 0; j < imageHeight; j++) {
                 int oRGB = originalImage.getRGB(i, j);
-                resultImage.setRGB(i, j, grayScalePixel(oRGB).getRGB());
+                int gs = inverseGammaExpansion(grayScalePixel(oRGB));
+//                System.out.println(grayScaleMap[i][j]);
+                grayScaleMap[i][j] = gs;
+
+                resultImage.setRGB(i, j, createRGB(gs).getRGB());
             }
         }
 
@@ -38,14 +51,15 @@ public class GreyScaler {
      * @param rgbVal
      * @return new RGB
      */
-    private static Color grayScalePixel(int rgbVal) {
+    private static double grayScalePixel(int rgbVal) {
 
         int red = (rgbVal & 0x00FF0000) >> 16;
         int blue = rgbVal & 0x000000FF;
         int green = (rgbVal & 0x0000FF00) >> 8;
-        int nRGBInt = grayScaling(red, green, blue);
+        double nRGBInt = grayScaling(red, green, blue);
 
-        return createRGB(nRGBInt);
+        return nRGBInt;
+//        return createRGB(nRGBInt);
     }
 
     /**
@@ -56,7 +70,7 @@ public class GreyScaler {
      * @param b
      * @return linear greyscale representation of its luminance
      */
-    private static int grayScaling(int r, int g, int b) {
+    private static double grayScaling(int r, int g, int b) {
 
         double scaledr = r / RGB_LIMIT;
         double scaledg = g / RGB_LIMIT;
@@ -69,9 +83,10 @@ public class GreyScaler {
 
         double y = (0.2126 * linearr + 0.7152 * linearg + 0.07722 * linearb);
 
-        int res = inverseGammaExpansion(y);
+//        int res = inverseGammaExpansion(y);
 
-        return res;
+//        return res;
+        return y;
     }
 
     /**
@@ -117,6 +132,10 @@ public class GreyScaler {
 
         Color c = new Color(red, blue, green);
         return c;
+    }
+
+    public int[][] getGrayScale() {
+        return grayScaleMap;
     }
 
     public BufferedImage getResultImage() {
