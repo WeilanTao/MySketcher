@@ -25,6 +25,7 @@ public class GreyScaler {
 
     }
 
+
     /**
      * Rendering the pic pixel by pixel
      *
@@ -35,11 +36,13 @@ public class GreyScaler {
         for (int i = 0; i < imageWidth; i++) {
             for (int j = 0; j < imageHeight; j++) {
                 int oRGB = originalImage.getRGB(i, j);
-                int gs = inverseGammaExpansion(grayScalePixel(oRGB));
-//                System.out.println(grayScaleMap[i][j]);
-                grayScaleMap[i][j] = gs;
+                double gs =grayScalePixel(oRGB);
 
-                resultImage.setRGB(i, j, createRGB(gs).getRGB());
+                int igs = inverseGammaExpansion(grayScalePixel(oRGB));
+                grayScaleMap[i][j] = igs;
+//                System.out.println(grayScaleMap[i][j]);
+
+                resultImage.setRGB(i, j, createRGB(igs).getRGB());
             }
         }
 

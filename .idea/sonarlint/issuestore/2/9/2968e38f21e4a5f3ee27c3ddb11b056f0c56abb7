@@ -1,0 +1,17 @@
+
+u
+java:S1488‡"YImmediately return this expression instead of assigning it to the temporary variable "c".(ÃÇ©ôşÿÿÿÿ
+t
+java:S1488c"^Immediately return this expression instead of assigning it to the temporary variable "linear".(ÿ“áÒ
+C
+java:S3010"(Remove this assignment of "imageHeight".(îÎ‚°üÿÿÿÿ
+o
+java:S1488V"YImmediately return this expression instead of assigning it to the temporary variable "y".(•²œ
+z
+java:S1488="_Immediately return this expression instead of assigning it to the temporary variable "nRGBInt".(Ü¦‘øÿÿÿÿ
+B
+java:S3010"'Remove this assignment of "imageWidth".(½´Æûÿÿÿÿ
+?
+java:S3010")Remove this assignment of "grayScaleMap".(á—·ê
+I
+java:S1481&"'Remove this unused "gs" local variable.(ˆÙœ÷ùÿÿÿÿ8¥šÓ¥/

@@ -8,42 +8,27 @@ import java.awt.image.BufferedImage;
  */
 
 public class StrokeLineDrawer {
-    private static double[][] gradientmap;
-    private static double[][] G;
     private static int imgWeight;
     private static int imgHight;
     private static int[][] kernel;
+    private static final int K_R=7;
+    private static final int K_C=7;
     private static int[][] inputgsmap;
     private BufferedImage StrokeLineImg;
     private static int[][] resultGrayScale;
 
     public StrokeLineDrawer(int[][] grayscalemap, int imgweight, int imghight) {
 
-
-//       inputgdmap = new double[imgweight][imgHight];
-//       inputgdmap = grayscalemap;
-
         imgHight = imghight;
         imgWeight = imgweight;
 ///////////////////////////////////////////////////////////
-        kernel = new int[466][291];
-        resultGrayScale=new int[imgWeight][imgHight];
-        for (int i = 0; i < 466; i++) {
-            for (int j = 0; j < 145; j++) {
-                kernel[i][j] = 1;
-            }
-        }
-        for (int i = 0; i < 466; i++) {
-            for (int j = 146; j < 291; j++) {
-                kernel[i][j] = -1;
-            }
-        }
+        int [][] kernels={{1,1,1,1,1,1,1},{1,1,1,1,1,1,1},{1,1,1,1,1,1,1},{0,0,0,0,0,0,0},{-1,-1,-1,-1,-1,-1,-1},{-1,-1,-1,-1,-1,-1,-1},{-1,-1,-1,-1,-1,-1,-1}};
+        kernel = kernels;
 
-        for (int i = 0; i < 466; i++) {
-            kernel[i][145] = 0;
-        }
+        resultGrayScale=new int[imgWeight][imgHight];
+
 ///////////////////////////////////////////////////////////////
-        inputgsmap = grayscalemap.clone();
+        inputgsmap = grayscalemap;
 
         convolutionThroughTheInputImg();
 
@@ -51,8 +36,7 @@ public class StrokeLineDrawer {
 
         for(int i =0; i<imgWeight; i++){
             for(int j =0; j<imgHight; j++){
-//                System.out.println(createRGB(resultGrayScale[i][j]).getRGB());
-                StrokeLineImg.setRGB(i, j, createRGB(resultGrayScale[i][j]).getRGB());
+                StrokeLineImg.setRGB(i, j, createRGB((resultGrayScale[i][j])).getRGB());
             }
         }
 
@@ -62,21 +46,19 @@ public class StrokeLineDrawer {
         return StrokeLineImg;
     }
 
-    private void GradientMap(int[][] gsmap) {
-        for (int i = 1; i < imgWeight - 1; i++) {
-            for (int j = 0; j < imgHight; j++) {
-                double gradX = Math.abs(gsmap[i + 1][j] - gsmap[i - 1][j]);
-                double gradY = Math.abs(gsmap[i][j + 1] - gsmap[i][j - 1]);
-                gradientmap[i][j] = Math.pow(Math.pow(gradX, 2) + Math.pow(gradY, 2), 0.5);
-            }
-        }
-    }
-
-
+//    private void GradientMap(int[][] gsmap) {
+//        for (int i = 1; i < imgWeight - 1; i++) {
+//            for (int j = 0; j < imgHight; j++) {
+//                double gradX = Math.abs(gsmap[i + 1][j] - gsmap[i - 1][j]);
+//                double gradY = Math.abs(gsmap[i][j + 1] - gsmap[i][j - 1]);
+//                gradientmap[i][j] = Math.pow(Math.pow(gradX, 2) + Math.pow(gradY, 2), 0.5);
+//            }
+//        }
+//    }
     private static void  OnePixelConvolution(int[][] sample, int x, int y) {
         int res = 0;
-        for (int i = 0; i < 466; i++) {
-            for (int j = 0; j < 291; j++) {
+        for (int i = 0; i < K_R; i++) {
+            for (int j = 0; j < K_C; j++) {
                 res = res + sample[i][j] * kernel[i][j];
             }
         }
@@ -84,29 +66,35 @@ public class StrokeLineDrawer {
     }
 
     public static void convolutionThroughTheInputImg() {
-        int horizontalWalk = imgWeight - 466;
-        int verticalWalk = imgHight - 291;
+        int horizontalWalk = imgWeight - K_R;
+        int verticalWalk = imgHight - K_C;
 
         for (int i = 0; i < horizontalWalk; i++) {
             for (int j = 0; j < verticalWalk; j++) {
-                int sample[][] =new int[466][291];
-                for(int k=i; k<466+i; k++){
-                    for(int m=j; m<291+j;m++){
-                        System.out.println("I am convoluting"+k+" "+m);
-
+                int sample[][] =new int[K_R][K_C];
+                for(int k=i; k<K_R+i; k++){
+                    for(int m=j; m<K_C+j;m++){
                         sample[k-i][m-j]=inputgsmap[k][m];
                         OnePixelConvolution(sample,i,j);
-//                        inputgsmap[k][m]=sample[k][m];
                     }
                 }
             }
         }
     }
 
+    private static int inverseGammaExpansion(double y) {
+        double srgby = (y <= 0.0031308) ? 12.92 * y : (1.055 * Math.pow(y, (1 / 2.4)) - 0.055);
+        srgby *= 255;
+        return (int) srgby;
+    }
+
     private static Color createRGB(int rgbint) {
+        System.out.println(rgbint);
+
         int red;
         int blue;
         int green;
+        System.out.println(rgbint);
 
         if (rgbint <= 255) {
             red = green = blue = rgbint;
@@ -115,12 +103,9 @@ public class StrokeLineDrawer {
             blue = rgbint & 0x000000FF;
             green = (rgbint & 0x0000FF00) >> 8;
         }
-        System.out.println(red+"   "+blue+ "   "+green);
-
         red=correctColor(red);
         green=correctColor(green);
         blue=correctColor(blue);
-
 
         Color c = new Color(red, blue, green);
         return c;

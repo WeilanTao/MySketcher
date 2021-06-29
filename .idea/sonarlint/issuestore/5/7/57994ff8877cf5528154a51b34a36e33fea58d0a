@@ -1,4 +1,11 @@
 
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(·š†‡
+i
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8§…ÿ‹¥/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+E	java:S108&")Either remove or fill this block of code.(ï­£Ä8§…ÿ‹¥/
+|
+java:S1450"ZRemove the "imageHeight" field and declare it as a local variable in the relevant methods.(›ŒðÎüÿÿÿÿ8§…ÿ‹¥/
+v
+java:S1450"YRemove the "imageWidth" field and declare it as a local variable in the relevant methods.(¥í‹ˆ8§…ÿ‹¥/
+\
+java:S1481":Remove this unused "greyScalerResultImage" local variable.(¸ãÉèüÿÿÿÿ8§…ÿ‹¥/
