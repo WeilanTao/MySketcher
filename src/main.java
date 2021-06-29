@@ -12,10 +12,11 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/cubs.PNG";
+    public static final String SOURCE_FILE = "./resource/xjj.PNG";
     public static final String DESTINATION_FILE = "./resource/out_xjj.PNG";
     private static int imageWidth;
     private static int imageHeight;
+
 
     public static void main(String[] args) {
         BufferedImage originalImage = null;
@@ -29,7 +30,8 @@ public class main {
             BufferedImage greyScalerResultImage = greyScaler.getResultImage();
             int[][] greyScaleMap = greyScaler.getGrayScale();
 
-            StrokeLineDrawer strokeLineDrawer = new StrokeLineDrawer(greyScaleMap, imageWidth, imageHeight);
+
+            StrokeLineDrawerOneDirection strokeLineDrawer = new StrokeLineDrawerOneDirection(greyScaleMap, imageWidth, imageHeight);
 
             BufferedImage stroklines= strokeLineDrawer.getStrokeLineImg();
 
