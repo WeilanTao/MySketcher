@@ -3,6 +3,7 @@ import java.awt.image.BufferedImage;
 
 /**
  * Create the convoluted img in one direction
+ *
  * @File
  * @Author Emily Weilan Tao
  * @Date Jun 27, 2021
@@ -19,19 +20,17 @@ public class StrokeLineDrawerOneDirection {
     private BufferedImage StrokeLineImg;
     private int[][] gradientmap;
 
-    public StrokeLineDrawerOneDirection(int[][] grayscalemap, int imgweight, int imghight) {
+    public StrokeLineDrawerOneDirection(int[][] grayscalemap, int imgweight, int imghight, int[][] kernel_in_one_dir) {
 
         imgHight = imghight;
         imgWeight = imgweight;
-        gradientmap=new int [imgWeight][imgWeight];
+        gradientmap = new int[imgWeight][imgHight];
         GradientMap(grayscalemap);
-///////////////////////////////////////////////////////////
-        int[][] kernels = {{1, 1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1, 1}, {0, 0, 0, 0, 0, 0, 0}, {-1, -1, -1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1, -1, -1}};
-        kernel = kernels;
+
+        kernel = kernel_in_one_dir;
 
         resultGrayScale = new int[imgWeight][imgHight];
 
-///////////////////////////////////////////////////////////////
         inputgsmap = gradientmap;
 
         convolutionThroughTheInputImg();
@@ -43,16 +42,6 @@ public class StrokeLineDrawerOneDirection {
             }
         }
 
-    }
-
-        private void GradientMap(int[][] gsmap) {
-        for (int i = 1; i < imgWeight - 1; i++) {
-            for (int j = 1; j < imgHight-1; j++) {
-                double gradX = Math.abs(gsmap[i + 1][j] - gsmap[i - 1][j]);
-                double gradY = Math.abs(gsmap[i][j + 1] - gsmap[i][j - 1]);
-                gradientmap[i][j] =(int) Math.pow(Math.pow(gradX, 2) + Math.pow(gradY, 2), 0.5);
-            }
-        }
     }
 
     /**
@@ -109,7 +98,6 @@ public class StrokeLineDrawerOneDirection {
             red = rgbint;
         } else {
             red = (rgbint & 0x00FF0000) >> 16;
-
         }
 
         red = correctColor(red);
@@ -136,6 +124,17 @@ public class StrokeLineDrawerOneDirection {
             c = color;
         }
         return c;
+    }
+
+    private void GradientMap(int[][] gsmap) {
+        for (int i = 1; i < imgWeight - 1; i++) {
+            for (int j = 1; j < imgHight - 1; j++) {
+                double gradX = Math.abs(gsmap[i + 1][j] - gsmap[i - 1][j]);
+                double gradY = Math.abs(gsmap[i][j + 1] - gsmap[i][j - 1]);
+                System.out.println("i： "+ i+ " j: "+j);
+                gradientmap[i][j] = (int) Math.pow(Math.pow(gradX, 2) + Math.pow(gradY, 2), 0.5);
+            }
+        }
     }
 
     /**

@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707aa37d-8f98-4fe2-af40-c52a74964251" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StrokeLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/daniel.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/sister.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/StrokeLineDrawer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/StrokeLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/StrokeLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/StrokeLineDrawerOneDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/StrokeLineDrawerOneDirection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource/out_xjj.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resource/out_xjj.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Convolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StrokeConvolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StrokeLineDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StrokeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StrokeLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,71 +35,44 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.9">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="552">
-                  <caret line="32" selection-start-line="32" selection-end-line="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#3957#3958#0" expanded="true" />
-                    <element signature="e#3993#3994#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/StrokeLine.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resource/red.PNG">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="71">
-                  <caret line="32" selection-start-line="32" selection-end-line="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StrokeLine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="56" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-788">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,10 +109,10 @@
         <option value="$PROJECT_DIR$/src/SeeThroughImageApplet.java" />
         <option value="$PROJECT_DIR$/src/Convolution.java" />
         <option value="$PROJECT_DIR$/src/StrokeLineDrawer.java" />
-        <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/GreyScaler.java" />
-        <option value="$PROJECT_DIR$/src/StrokeLine.java" />
+        <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java" />
+        <option value="$PROJECT_DIR$/src/StrokeLine.java" />
       </list>
     </option>
   </component>
@@ -149,9 +122,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="828" />
-    <option name="y" value="18" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="768" />
+    <option name="y" value="43" />
     <option name="width" value="1131" />
     <option name="height" value="1032" />
   </component>
@@ -189,7 +162,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1624968802310" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1624974004107" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -246,18 +219,18 @@
       <workItem from="1624728085719" duration="31406000" />
       <workItem from="1624864826245" duration="19870000" />
       <workItem from="1624900274428" duration="3139000" />
-      <workItem from="1624927990444" duration="15221000" />
+      <workItem from="1624927990444" duration="19566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70253000" />
+    <option name="totallyTimeSpent" value="74598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15278901" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20210186" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -266,7 +239,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3232682" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36056837" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19715808" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -288,41 +261,29 @@
       <window_info anchor="right" id="Maven" order="7" weight="0.32955465" />
       <window_info anchor="right" id="Database" order="8" weight="0.32955465" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15278901" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3232682" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.57548845" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="SonarLint" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3285968" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" weight="0.32955465" />
-      <window_info anchor="right" id="Database" order="8" weight="0.32955465" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java</url>
+          <line>53</line>
+          <properties class="StrokeLineDrawerOneDirection" method="OnePixelConvolution">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/lang/Object.java">
@@ -386,16 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/cubs.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/out_xjj.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/xjj.PNG">
-      <provider selected="true" editor-type-id="images" />
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GreyScaler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -406,37 +357,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StrokeLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/resource/cubs.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/out_3.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/out_2.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/out_0.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/out_1.PNG">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/red.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/resource/xjj.PNG">
+      <provider selected="true" editor-type-id="images" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel_3.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel_2.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel_1.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel_0.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="117">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sister_3.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sister_2.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sister_1.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sister_0.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sister.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/out_xjj.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        <state relative-caret-position="-788">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3957#3958#0" expanded="true" />
-            <element signature="e#3993#3994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StrokeLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="56" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

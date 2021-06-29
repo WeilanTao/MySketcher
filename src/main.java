@@ -12,7 +12,7 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/xjj.PNG";
+    public static final String SOURCE_FILE = "./resource/sister.PNG";
     public static final String DESTINATION_FILE = "./resource/out_xjj.PNG";
     private static int imageWidth;
     private static int imageHeight;
@@ -31,12 +31,14 @@ public class main {
             int[][] greyScaleMap = greyScaler.getGrayScale();
 
 
-            StrokeLineDrawerOneDirection strokeLineDrawer = new StrokeLineDrawerOneDirection(greyScaleMap, imageWidth, imageHeight);
+            StrokeLine skpackage=new StrokeLine(greyScaleMap,imageWidth,imageHeight);
 
-            BufferedImage stroklines= strokeLineDrawer.getStrokeLineImg();
+//            StrokeLineDrawerOneDirection strokeLineDrawer = new StrokeLineDrawerOneDirection(greyScaleMap, imageWidth, imageHeight);
+
+//            BufferedImage stroklines= strokeLineDrawer.getStrokeLineImg();
 
             File outputFile = new File(DESTINATION_FILE);
-            ImageIO.write(stroklines, "PNG", outputFile);
+            ImageIO.write(greyScalerResultImage, "PNG", outputFile);
         } catch (IOException e) {
         }
     }
