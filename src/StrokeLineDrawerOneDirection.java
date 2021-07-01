@@ -88,7 +88,7 @@ public class StrokeLineDrawerOneDirection {
      * @return
      */
     private static Color createRGB(int rgbint) {
-        System.out.println(rgbint);
+//        System.out.println(rgbint);
 
         int red;
         int blue;
@@ -131,7 +131,7 @@ public class StrokeLineDrawerOneDirection {
             for (int j = 1; j < imgHight - 1; j++) {
                 double gradX = Math.abs(gsmap[i + 1][j] - gsmap[i - 1][j]);
                 double gradY = Math.abs(gsmap[i][j + 1] - gsmap[i][j - 1]);
-                System.out.println("i： "+ i+ " j: "+j);
+//                System.out.println("i： "+ i+ " j: "+j);
                 gradientmap[i][j] = (int) Math.pow(Math.pow(gradX, 2) + Math.pow(gradY, 2), 0.5);
             }
         }

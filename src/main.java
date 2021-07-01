@@ -12,7 +12,7 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/sister.PNG";
+    public static final String SOURCE_FILE = "./resource/cubs.PNG";
     public static final String DESTINATION_FILE = "./resource/out_xjj.PNG";
     private static int imageWidth;
     private static int imageHeight;
@@ -29,16 +29,15 @@ public class main {
             GreyScaler greyScaler = new GreyScaler(originalImage);
             BufferedImage greyScalerResultImage = greyScaler.getResultImage();
             int[][] greyScaleMap = greyScaler.getGrayScale();
-
-
-            StrokeLine skpackage=new StrokeLine(greyScaleMap,imageWidth,imageHeight);
-
 //            StrokeLineDrawerOneDirection strokeLineDrawer = new StrokeLineDrawerOneDirection(greyScaleMap, imageWidth, imageHeight);
-
 //            BufferedImage stroklines= strokeLineDrawer.getStrokeLineImg();
 
+            StrokeLine skpackage=new StrokeLine(greyScaleMap,imageWidth,imageHeight);
+            BufferedImage strokeimage = skpackage.getResult();
+
+
             File outputFile = new File(DESTINATION_FILE);
-            ImageIO.write(greyScalerResultImage, "PNG", outputFile);
+            ImageIO.write(strokeimage, "PNG", outputFile);
         } catch (IOException e) {
         }
     }
