@@ -12,8 +12,8 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/red.png";
-    public static final String DESTINATION_FILE = "./resource/red_out.PNG";
+    public static final String SOURCE_FILE = "./resource/xjj.png";
+    public static final String DESTINATION_FILE = "./resource/xjj_stroke.PNG";
     private static int imageWidth;
     private static int imageHeight;
 
@@ -33,8 +33,11 @@ public class main {
             Tone tone=new Tone(greyScalerResultImage);
             BufferedImage toned = tone.getResult();
 
+            Stroke stroke=new Stroke(toned);
+            BufferedImage stokeLine = stroke.getResult();
+
             File outputFile = new File(DESTINATION_FILE);
-            ImageIO.write(toned, "PNG", outputFile);
+            ImageIO.write(stokeLine, "PNG", outputFile);
         } catch (IOException e) {
         }
     }
