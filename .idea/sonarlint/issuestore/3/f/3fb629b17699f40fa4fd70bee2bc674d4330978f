@@ -1,0 +1,53 @@
+
+U
+java:S1135¤"2Complete the task associated to this TODO comment.(ÅÉ¢şÿÿÿÿ8¹¼¶¦/
+@
+java:S3010ˆ"#Remove this assignment of "CMap_0".(€¿“88¹¼¶¦/
+
+java:S1130”"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Â¡Ş‡şÿÿÿÿ8¹¼¶¦/
+@
+java:S1118€"Hide this public constructor.(¢ØÃùÿÿÿÿ8È¬¶¦/
+B
+java:S3010‰"$Remove this assignment of "CMap_90".(îô†¯8¹¼¶¦/
+F
+java:S3010"#Remove this assignment of "result".(üç¾ıûÿÿÿÿ8¹¼¶¦/
+?
+java:S3010Œ"!Remove this assignment of "SMap".(“àˆ8¹¼¶¦/
+U
+java:S1197Ü"8Move the array designator from the variable to the type.(Ó·ü;8¹¼¶¦/
+m	java:S117Í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿Õ¯P8³âı´¦/
+B
+java:S3010‹"%Remove this assignment of "CMap_135".(Ï³ÕH8¹¼¶¦/
+p
+java:S3008{"SRename this field "CMap_135" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÆ½û8³âı´¦/
+s	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ôÇÁúÿÿÿÿ8³âı´¦/
+J
+java:S3010‡"'Remove this assignment of "sorcegsMap".(ÇñÀÇúÿÿÿÿ8¹¼¶¦/
+t
+java:S3008z"RRename this field "CMap_45" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡çåÂùÿÿÿÿ8³âı´¦/
+J
+java:S3010‚"'Remove this assignment of "imageHight".(Ÿå¼İüÿÿÿÿ8¹¼¶¦/
+s	java:S117Î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´’Íşÿÿÿÿ8È¬¶¦/
+V
+java:S1197ß"8Move the array designator from the variable to the type.(˜™¹Ó8¹¼¶¦/
+n	java:S117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÆä8È¬¶¦/
+p	java:S100í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÊÀ”úÿÿÿÿ8¹¼¶¦/
+s
+java:S3008x"QRename this field "CMap_0" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£â€şÿÿÿÿ8³âı´¦/
+|
+java:S1488Æ"YImmediately return this expression instead of assigning it to the temporary variable "c".(ÃÇ©ôşÿÿÿÿ8È¬¶¦/
+V
+java:S1197™"8Move the array designator from the variable to the type.(«ù¢ú8¹¼¶¦/
+l
+java:S3008|"ORename this field "SMap" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÛÖ³8È¬¶¦/
+m	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Í¨28³âı´¦/
+E
+java:S3010"'Remove this assignment of "imageWidth".(ÍÓ›ï8¹¼¶¦/
+B
+java:S3010Š"$Remove this assignment of "CMap_45".(¦Ñ8¹¼¶¦/
+k	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½”Ì–8¹¼¶¦/
+D	java:S131’""Add a default case to this switch.(øãş•ÿÿÿÿÿ8¹¼¶¦/
+s
+java:S1149s"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(½ù¾½8È¬¶¦/
+t
+java:S3008y"RRename this field "CMap_90" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚™ÆÃıÿÿÿÿ8³âı´¦/

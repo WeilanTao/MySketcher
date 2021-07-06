@@ -33,7 +33,10 @@ public class StrokeLineDrawerOneDirection {
 
         inputgsmap = gradientmap;
 
+
         convolutionThroughTheInputImg();
+
+
         StrokeLineImg = new BufferedImage(imgWeight, imgHight, BufferedImage.TYPE_INT_RGB);
 
         for (int i = 0; i < imgWeight; i++) {
@@ -116,7 +119,7 @@ public class StrokeLineDrawerOneDirection {
      */
     private static int correctColor(int color) {
         int c;
-        if (color > 255) {
+        if (color >100) {
             c = 255;
         } else if (color < 0) {
             c = 0;
