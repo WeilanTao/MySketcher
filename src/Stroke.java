@@ -4,7 +4,7 @@ import java.awt.image.BufferedImageOp;
 import java.awt.image.ConvolveOp;
 import java.awt.image.Kernel;
 
-
+//TODO 高亮的地方画的不全
 public class Stroke {
     private static float[] kernel;
     private static float[] kernel1;
