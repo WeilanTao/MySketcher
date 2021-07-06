@@ -4,6 +4,15 @@ import java.awt.image.LookupOp;
 import java.awt.image.LookupTable;
 import java.awt.image.ShortLookupTable;
 
+/**
+ *
+ * @File 
+ * @Author Emily Weilan Tao 
+ * @Date July 6, 2021 
+ * @Description 
+ * @Since version-1.0
+ * @Copyright Copyright (c) 2020
+ */
 public class Tone {
     private static int average;
     private static int counter;

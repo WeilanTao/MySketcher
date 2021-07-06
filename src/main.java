@@ -12,8 +12,8 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/cubs.png";
-    public static final String DESTINATION_FILE = "./resource/cubs_stroke.PNG";
+    public static final String SOURCE_FILE = "./resource/xjj.png";
+    public static final String DESTINATION_FILE = "./resource/xjj_textured.PNG";
     private static int imageWidth;
     private static int imageHeight;
 
@@ -35,8 +35,11 @@ public class main {
             Tone tone=new Tone(greyScalerResultImage);
             BufferedImage toned = tone.getResult();
 
+            Texture texture=new Texture(toned);
+            BufferedImage blendedTxtre = texture.getCombined();
+
             File outputFile = new File(DESTINATION_FILE);
-            ImageIO.write(stokeLine, "PNG", outputFile);
+            ImageIO.write(blendedTxtre, "PNG", outputFile);
 
         } catch (IOException e) {
         }

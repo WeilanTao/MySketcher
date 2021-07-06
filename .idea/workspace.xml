@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707aa37d-8f98-4fe2-af40-c52a74964251" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resource/cubs.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/pattern.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Texture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/KernelTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/KernelTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/Stroke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/Stroke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/Tone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/Tone.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/cubs_stroke.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resource/cubs_stroke.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KernelTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KernelTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stroke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stroke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="144">
+              <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,44 +55,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/cubs_tone.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/raider.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stroke.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/daniel.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/daniel_textured.PNG">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/red_out.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/mountain_stroke.PNG">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/xjj.png">
+        <entry file="file://$PROJECT_DIR$/resource/sample.PNG">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/xjj_out.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/sample_textured.PNG">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/xjj_stroke.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/mountain_textured.PNG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/raider_textured.PNG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/red_stroke.PNG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/pattern.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -121,6 +131,7 @@
       <find>sys</find>
       <find>index</find>
       <find>input</find>
+      <find>texturePaint</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,9 +148,11 @@
         <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/StrokeLine.java" />
         <option value="$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java" />
-        <option value="$PROJECT_DIR$/src/Tone.java" />
         <option value="$PROJECT_DIR$/src/Kernel.java" />
+        <option value="$PROJECT_DIR$/src/KernelTable.java" />
         <option value="$PROJECT_DIR$/src/Stroke.java" />
+        <option value="$PROJECT_DIR$/src/Tone.java" />
+        <option value="$PROJECT_DIR$/src/Texture.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
       </list>
     </option>
@@ -157,11 +170,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="280" />
-    <option name="y" value="96" />
-    <option name="width" value="1292" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="133" />
+    <option name="y" value="4" />
+    <option name="width" value="1859" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,7 +210,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625559924355" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625591188111" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -268,18 +281,18 @@
       <workItem from="1625403048310" duration="130000" />
       <workItem from="1625535479161" duration="46000" />
       <workItem from="1625536222727" duration="690000" />
-      <workItem from="1625543440298" duration="7436000" />
+      <workItem from="1625543440298" duration="16109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139388000" />
+    <option name="totallyTimeSpent" value="148061000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="89" y="3" width="1239" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21376519" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2086514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -288,7 +301,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32149202" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13321492" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.054054055" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -308,7 +321,7 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven" order="7" weight="0.32955465" />
-      <window_info anchor="right" id="Database" order="8" weight="0.32955465" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32873166" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,23 +336,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/c1_out.PNG" />
-    <entry file="file://$PROJECT_DIR$/resource/c0_out.PNG" />
-    <entry file="file://$PROJECT_DIR$/resource/iamok_0.PNG" />
-    <entry file="file://$PROJECT_DIR$/resource/out_3.PNG" />
-    <entry file="file://$PROJECT_DIR$/resource/out_2.PNG" />
-    <entry file="file://$PROJECT_DIR$/src/test.java" />
-    <entry file="file://$PROJECT_DIR$/resource/iamok_2.PNG" />
-    <entry file="file://$PROJECT_DIR$/src/StrokeLineDrawerOneDirection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2904">
-          <caret line="121" column="22" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StrokeLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5136">
@@ -378,62 +374,13 @@
     <entry file="file://$PROJECT_DIR$/resource/sister.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/mountain.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/red.PNG">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GreyScaler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#3632#3633#0" expanded="true" />
-            <element signature="e#3667#3668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/daniel_tone.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/mountain_stroke.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/mountain_tone.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/raider.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KernelTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-835">
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/raider_out.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/raider_stroke.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/red_stroke.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/sample.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/sample_out.PNG">
@@ -454,32 +401,119 @@
     <entry file="file://$PROJECT_DIR$/resource/red_out.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/cubs.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KernelTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1072">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/jre/lib/rt.jar!/sun/awt/image/ByteInterleavedRaster.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stroke.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="-27">
+          <caret line="125" column="42" lean-forward="true" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/cubs_tone.PNG">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/Tone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/daniel.PNG">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/GreyScaler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2617">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3632#3633#0" expanded="true" />
+            <element signature="e#3667#3668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/cubs_stroke.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/cubs.PNG">
+    <entry file="file://$PROJECT_DIR$/resource/cubs_tone.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Texture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/cubs_textured.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel_tone.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/mountain.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/mountain_tone.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/pattern.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/raider.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/daniel_textured.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/mountain_textured.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/raider_textured.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/red_stroke.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/mountain_stroke.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sample.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sample_textured.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="144">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

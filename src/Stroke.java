@@ -4,6 +4,15 @@ import java.awt.image.BufferedImageOp;
 import java.awt.image.ConvolveOp;
 import java.awt.image.Kernel;
 
+/**
+ *
+ * @File 
+ * @Author Emily Weilan Tao 
+ * @Date July 6, 2021 
+ * @Description 
+ * @Since version-1.0
+ * @Copyright Copyright (c) 2020
+ */
 //TODO 高亮的地方画的不全
 public class Stroke {
     private static float[] kernel;
@@ -117,7 +126,7 @@ public class Stroke {
         red = (rgbint & 0x00FF0000) >> 16;
         if (red > 255) {
             red = 255;
-        } else if (red < 30) {
+        } else if (red < 20) {
             red = 0;
         }
         red = 255 - red;

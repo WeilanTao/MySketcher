@@ -1,3 +1,13 @@
+
+/**
+ *
+ * @File 
+ * @Author Emily Weilan Tao 
+ * @Date July 6, 2021
+ * @Description 
+ * @Since version-1.0
+ * @Copyright Copyright (c) 2020
+ */
 public class KernelTable  {
     private static final float ninth = 1.0f / 9.0f;
     private static final float[] blurKernel = {
