@@ -153,10 +153,6 @@ public class Stroke {
     public static BufferedImage blendStroke(BufferedImage textured){
         //get a copy of the stroke img as the cover img
         BufferedImage cover =  new BufferedImage(width,height,BufferedImage.TYPE_INT_ARGB);
-//        Graphics2D g2d = (Graphics2D) cover.getGraphics();
-//        g2d.setComposite(AlphaComposite.SrcOver.derive(1f));
-//        g2d.drawImage(result, 0, 0, null);
-        //make the stroke pic transparent
         Graphics g = cover.getGraphics();
         g.drawImage(result, 0, 0, null);
         g.dispose();
@@ -186,10 +182,10 @@ public class Stroke {
 
         g1.dispose();
 
-        BufferedImage blured = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-        BufferedImageOp blur = new ConvolveOp(new Kernel(3, 3, blurKernel));
-        blur.filter(strokeBlended, blured);
+//        BufferedImage blured = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+//        BufferedImageOp blur = new ConvolveOp(new Kernel(3, 3, blurKernel));
+//        blur.filter(strokeBlended, blured);
 
-        return blured;
+        return strokeBlended;
     }
 }

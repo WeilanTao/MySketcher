@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707aa37d-8f98-4fe2-af40-c52a74964251" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resource/in1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/in3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/in4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/YourSketcher/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YourSketcher/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/cubs_output.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resource/cubs_output.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/mountain_output.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resource/mountain_output.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/sample_output.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/resource/sample_output.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/xjj.png" beforeDir="false" afterPath="$PROJECT_DIR$/resource/xjj.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+            <state relative-caret-position="288">
+              <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,47 +49,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/cubs.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resource/cubs_output.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/in1_output.PNG">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/sample_output.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/in1.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/xjj.png">
+        <entry file="file://$PROJECT_DIR$/resource/in3.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/xjj_output.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/xjj_out.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/raider_output.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/raider_textured.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/sample.PNG">
+        <entry file="file://$PROJECT_DIR$/resource/in4.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -165,10 +139,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="690" />
-    <option name="y" value="7" />
-    <option name="width" value="1224" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="709" />
+    <option name="width" value="1140" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -205,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625639951808" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625641313039" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -216,6 +189,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\YourSketcher\resource" />
+      <recent name="E:\YourSketcher\in2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,17 +251,18 @@
       <workItem from="1625535479161" duration="46000" />
       <workItem from="1625536222727" duration="690000" />
       <workItem from="1625543440298" duration="20917000" />
+      <workItem from="1625640315306" duration="842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152869000" />
+    <option name="totallyTimeSpent" value="153711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14331985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12955466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -296,7 +271,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.23801066" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22380106" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22380106" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,21 +306,9 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/out_xjj.PNG" />
-    <entry file="file://$PROJECT_DIR$/resource/sister_0.PNG" />
-    <entry file="file://$PROJECT_DIR$/resource/sister_1.PNG" />
-    <entry file="file://$PROJECT_DIR$/../tets/resource/raider.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tets/resource/mount.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tets/resource/xjj.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/sister.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../tets/resource/mount.PNG" />
+    <entry file="file://$PROJECT_DIR$/../tets/resource/xjj.PNG" />
+    <entry file="file://$PROJECT_DIR$/resource/sister.PNG" />
     <entry file="file://$PROJECT_DIR$/resource/sample_stroke.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -400,9 +363,7 @@
     <entry file="file://$PROJECT_DIR$/resource/red.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/pattern.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/pattern.png" />
     <entry file="file://$PROJECT_DIR$/resource/pattern.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -418,12 +379,8 @@
     <entry file="file://$PROJECT_DIR$/resource/mountain_textured.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/large_textured.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/large.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/large_textured.PNG" />
+    <entry file="file://$USER_HOME$/Desktop/large.jpg" />
     <entry file="file://$PROJECT_DIR$/resource/xjj_textured.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -444,9 +401,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/raider.PNG">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/sample_out.PNG">
       <provider selected="true" editor-type-id="images" />
@@ -471,7 +425,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/raider.PNG">
+    <entry file="file://$PROJECT_DIR$/resource/raider.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/mountain.png">
@@ -486,6 +440,21 @@
     <entry file="file://$PROJECT_DIR$/resource/raider_out.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/resource/cubs.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/sample_output.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/xjj.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/xjj_output.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/xjj_out.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/resource/raider_output.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -495,33 +464,33 @@
     <entry file="file://$PROJECT_DIR$/resource/sample.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/xjj_out.PNG">
+    <entry file="file://$PROJECT_DIR$/resource/cubs_output.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/xjj.png">
+    <entry file="file://$PROJECT_DIR$/resource/raider.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/sample_output.PNG">
+    <entry file="file://$PROJECT_DIR$/resource/in1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/xjj_output.PNG">
+    <entry file="file://$PROJECT_DIR$/resource/in3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/in1_output.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/in4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+        <state relative-caret-position="288">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/cubs.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/cubs_output.PNG">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
