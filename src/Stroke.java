@@ -25,6 +25,7 @@ public class Stroke {
     private static int height;
     private static BufferedImage result;
     private static BufferedImage inputImage;
+    private static BufferedImage strokeBlended;
 
     public static BufferedImage getResult() {
         return result;
@@ -42,7 +43,7 @@ public class Stroke {
         getSharp_kernel = kernelgenerater.getSharp_kernel();
         inputImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         result = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-
+        strokeBlended=new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
 
         Graphics g = inputImage.getGraphics();
         g.drawImage(input, 0, 0, null);
@@ -147,5 +148,48 @@ public class Stroke {
             min = rgb3;
         }
         return min;
+    }
+
+    public static BufferedImage blendStroke(BufferedImage textured){
+        //get a copy of the stroke img as the cover img
+        BufferedImage cover =  new BufferedImage(width,height,BufferedImage.TYPE_INT_ARGB);
+//        Graphics2D g2d = (Graphics2D) cover.getGraphics();
+//        g2d.setComposite(AlphaComposite.SrcOver.derive(1f));
+//        g2d.drawImage(result, 0, 0, null);
+        //make the stroke pic transparent
+        Graphics g = cover.getGraphics();
+        g.drawImage(result, 0, 0, null);
+        g.dispose();
+
+        int alpha =255;
+
+        for(int i = 0;  i<width; i++){
+            for(int j =0; j<height; j++){
+                int rgb = cover.getRGB(i,j);
+                int r= (rgb & 0x00FF0000) >> 16;
+                if(r>150){
+                    alpha =0;
+                }else{
+                    alpha = 255;
+                }
+                rgb =(alpha<<24| (rgb & 0x00ffffff));
+                cover.setRGB(i,j,rgb);
+
+            }
+        }
+
+
+        //blend the two pictures
+        Graphics g1 = strokeBlended.getGraphics();
+        g1.drawImage(textured, 0, 0, null);
+        g1.drawImage(cover, 0, 0, null);
+
+        g1.dispose();
+
+        BufferedImage blured = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+        BufferedImageOp blur = new ConvolveOp(new Kernel(3, 3, blurKernel));
+        blur.filter(strokeBlended, blured);
+
+        return blured;
     }
 }
