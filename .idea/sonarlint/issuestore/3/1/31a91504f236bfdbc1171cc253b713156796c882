@@ -1,0 +1,57 @@
+
+v
+java:S3008"ZRename this field "getSharp_kernel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÇóA8‰»Õ§/
+@
+java:S3010-"#Remove this assignment of "result".(Îôâ•8°¸ÂÕ§/
+m	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÄïÎ8¢àÇÕ§/
+r	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“…¬øÿÿÿÿÿ8¢àÇÕ§/
+D
+java:S3010#""Remove this assignment of "width".(¤êº·ıÿÿÿÿ8†çÎÕ§/
+l	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èçùq8¢àÇÕ§/
+I
+java:S3010+",Remove this assignment of "getSharp_kernel".(§ê‹ä8‰»Õ§/
+R
+java:S2209'"5Change this instance-reference to a static reference.(Èà€8’×§/
+|
+java:S1488‡"YImmediately return this expression instead of assigning it to the temporary variable "c".(¤Çš÷ıÿÿÿÿ8ã‰Ö§/
+r	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îòåİıÿÿÿÿ8·ÒÖ§/
+A
+java:S3010("$Remove this assignment of "kernel2".(‚¯úÁ8ÉæŞÕ§/
+A
+java:S3010)"$Remove this assignment of "kernel3".(µæÎ®8ÉæŞÕ§/
+R
+java:S2209)"5Change this instance-reference to a static reference.(µæÎ®8’×§/
+R
+java:S2209+"5Change this instance-reference to a static reference.(§ê‹ä8’×§/
+Z
+java:S1197^"8Move the array designator from the variable to the type.(Ú°îïúÿÿÿÿ8·ÒÖ§/
+E
+java:S3010$"#Remove this assignment of "height".(ãğ¶Ëüÿÿÿÿ8†çÎÕ§/
+R
+java:S2209&"5Change this instance-reference to a static reference.(œˆ×Å8’×§/
+R
+java:S2209("5Change this instance-reference to a static reference.(‚¯úÁ8’×§/
+@
+java:S3010&"#Remove this assignment of "kernel".(œˆ×Å8š‚Ö§/
+M
+java:S2440%"+Remove this instantiation of "KernelTable".(Ÿä¸šúÿÿÿÿ8’×§/
+m	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¬êö8¢àÇÕ§/
+G
+java:S3010."*Remove this assignment of "strokeBlended".(êåÅ8íŸÃü§/
+D
+java:S3010,"'Remove this assignment of "inputImage".(¥°ÑŞ8ŠÒÄÕ§/
+r	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïáû×üÿÿÿÿ8¢àÇÕ§/
+m	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š—Šò8£ÙéÕ§/
+m	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ºÉ¹8¢àÇÕ§/
+?
+java:S1118""Hide this public constructor.(£÷ê’øÿÿÿÿ8½éúÕ§/
+O
+java:S1135"2Complete the task associated to this TODO comment.(À¥ö¼8¬¤¦×§/
+r	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“…Âîşÿÿÿÿ8£ÙéÕ§/
+r	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûÿÿÿÿÿ8·ÒÖ§/
+A
+java:S3010'"$Remove this assignment of "kernel1".(Èà€8ÉæŞÕ§/
+D
+java:S3010*"'Remove this assignment of "blurKernel".(‹¤÷8‰»Õ§/
+R
+java:S2209*"5Change this instance-reference to a static reference.(‹¤÷8’×§/

@@ -7,3 +7,11 @@ U
 %src/StrokeLineDrawerOneDirection.java,a\d\adc247f29cf9ebf9cda3443677a737c6d84ba653
 C
 src/StrokeLine.java,3\f\3fb629b17699f40fa4fd70bee2bc674d4330978f
+=
+src/Tone.java,e\d\ed491ffb57e4c563fdbd7ae2a090036826cc3789
+D
+src/KernelTable.java,c\0\c06c3eca7a4f3b3dd9a5e083f832e62667c56d79
+@
+src/Texture.java,4\9\497542a5001176abade0911ab9546961d60a4b29
+?
+src/Stroke.java,3\1\31a91504f236bfdbc1171cc253b713156796c882

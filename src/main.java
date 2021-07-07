@@ -12,8 +12,8 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/raider.png";
-    public static final String DESTINATION_FILE = "./resource/raider.PNG";
+    public static final String SOURCE_FILE = "./resource/cubs.png";
+    public static final String DESTINATION_FILE = "./resource/cubs_output.PNG";
     private static int imageWidth;
     private static int imageHeight;
 

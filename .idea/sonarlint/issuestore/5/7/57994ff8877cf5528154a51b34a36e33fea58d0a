@@ -1,15 +1,23 @@
 
-E	java:S108)")Either remove or fill this block of code.(ï­£Ä8§…ÿ‹¥/
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+Q
+java:S2209)"5Change this instance-reference to a static reference.(—’Å8›ñÕü§/
+Q
+java:S1068"/Remove this unused "imageHeight" private field.(›ŒğÎüÿÿÿÿ8¯îÖ§/
+E	java:S1080")Either remove or fill this block of code.(ï­£Ä8§…ÿ‹¥/
 i
 java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8§…ÿ‹¥/
-N
-java:S1481"1Remove this unused "greyScaleMap" local variable.(˜ÇÒ¦8Ö‹Ñ†§/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
 |
-java:S1450"ZRemove the "imageHeight" field and declare it as a local variable in the relevant methods.(›ŒğÎüÿÿÿÿ8§…ÿ‹¥/
-v
-java:S1450"YRemove the "imageWidth" field and declare it as a local variable in the relevant methods.(¥í‹ˆ8§…ÿ‹¥/
-Q
-java:S1068"/Remove this unused "imageHeight" private field.(›ŒğÎüÿÿÿÿ8Ö‹Ñ†§/
+java:S1450"ZRemove the "imageHeight" field and declare it as a local variable in the relevant methods.(›ŒğÎüÿÿÿÿ8¯îÖ§/
+W
+java:S2209$"5Change this instance-reference to a static reference.(ÕÙúÿÿÿÿ8×…œæ§/
+J
+java:S1481)".Remove this unused "stokeLine" local variable.(—’Å8›ñÕü§/
 K
-java:S1068".Remove this unused "imageWidth" private field.(¥í‹ˆ8Ö‹Ñ†§/
+java:S1068".Remove this unused "imageWidth" private field.(¥í‹ˆ8¯îÖ§/
+H
+java:S2440("&Remove this instantiation of "Stroke".(œˆËğşÿÿÿÿ8›ñÕü§/
+W
+java:S2209+"5Change this instance-reference to a static reference.(£¶²…üÿÿÿÿ8¬»Şü§/
+v
+java:S1450"YRemove the "imageWidth" field and declare it as a local variable in the relevant methods.(¥í‹ˆ8¯îÖ§/
