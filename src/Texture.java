@@ -45,7 +45,7 @@ public class Texture {
 
                 int tonedrgb = inputImage.getRGB(i,j);
                 int tonedred = (tonedrgb & 0x00FF0000) >> 16;
-                if(red>100 || tonedred >230 || tonedred< 30){
+                if(red>200 || tonedred >230 || tonedred< 30){
                     alpha=0;
                 }else{
                     alpha=255;

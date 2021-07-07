@@ -12,8 +12,8 @@ import java.io.IOException;
  * @Copyright Copyright (c) 2020
  */
 public class main {
-    public static final String SOURCE_FILE = "./resource/xjj.png";
-    public static final String DESTINATION_FILE = "./resource/xjj_textured.PNG";
+    public static final String SOURCE_FILE = "./resource/large.jpg";
+    public static final String DESTINATION_FILE = "./resource/large_textured.PNG";
     private static int imageWidth;
     private static int imageHeight;
 
