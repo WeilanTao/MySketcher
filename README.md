@@ -1,5 +1,5 @@
 # YourSketcher
-This program produces a pencil drawing effect to natural photoography.
+This program produces a pencil drawing effect to natural photography.
 
 Effect as follows:
 
