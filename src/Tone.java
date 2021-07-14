@@ -70,7 +70,7 @@ public class Tone {
     private static short[] makeLookUpTable(int d) {
         short[] cT = new short[256];
         for (short i = 0; i < 256; i++) {
-            cT[i] = (short) ((i - average) * d + average + 0.5 + 128);
+            cT[i] = (short) ((i - average) * d + average*2 + 0.5);
             if (cT[i] > 255) {
                 cT[i] = 255;
             }

@@ -1,27 +1,62 @@
 import java.awt.*;
+
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+//import java.lang.List;
 
 /**
+ *
  * @File
  * @Author Emily Weilan Tao
- * @Date Jun 27, 2021
+ * @Date July 14, 2021
+ * @Description Add multithreading
+ * @Since version-1.0
+ * @Copyright Copyright (c) 2020
  */
 public class GreyScaler {
 
     private static final double RGB_LIMIT = 255.00;
     private static int imageWidth;
     private static int imageHeight;
-    private static int[][] grayScaleMap;//row,col
     private BufferedImage resultImage;
+    private static final int  THREAD_NUMBER=2;
+    private static int height;
+    private static ExecutorService  executor;
 
 
-    public GreyScaler(BufferedImage originalImage) {
+    public GreyScaler(BufferedImage originalImage) throws InterruptedException {
         imageWidth = originalImage.getWidth();
         imageHeight = originalImage.getHeight();
+        height=imageHeight/THREAD_NUMBER;
         resultImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_4BYTE_ABGR);
-        grayScaleMap = new int[imageWidth][imageHeight];
+        executor= Executors.newCachedThreadPool();
 
-        grayScaleImg(originalImage, resultImage);
+        List<Thread> threads=new ArrayList<>();
+        for(int i=0; i<THREAD_NUMBER; i++){
+            final int threadMuliplier=i;
+
+            threads.add(
+                    new Thread(()->{
+                int leftCorner=0;
+                int topCorner=height*threadMuliplier;
+
+                grayScaleImg(originalImage, resultImage,leftCorner, topCorner,imageWidth,height);
+            })
+            );
+
+        }
+
+        for(Thread t:threads){
+           t.start();
+        }
+        for(Thread t:threads){
+            t.join();
+        }
+
 
     }
 
@@ -32,14 +67,15 @@ public class GreyScaler {
      * @param originalImage
      * @param resultImage
      */
-    private static void grayScaleImg(BufferedImage originalImage, BufferedImage resultImage) {
-        for (int i = 0; i < imageWidth; i++) {
-            for (int j = 0; j < imageHeight; j++) {
+    private static void grayScaleImg(BufferedImage originalImage, BufferedImage resultImage, int leftCorner, int topCorner,int imageWidth, int height) {
+        for (int i = leftCorner; i < leftCorner+imageWidth && i<imageWidth; i++) {
+            for (int j = leftCorner; j<topCorner+height&&j < imageHeight; j++) {
                 int oRGB = originalImage.getRGB(i, j);
-                double gs =grayScalePixel(oRGB);
+//                double gs =grayScalePixel(oRGB);
 
                 int igs = inverseGammaExpansion(grayScalePixel(oRGB));
-                grayScaleMap[i][j] = igs;
+//                grayScaleMap[i][j] = igs;
+//                System.out.println(grayScaleMap[i][j]);
 //                System.out.println(grayScaleMap[i][j]);
 
                 resultImage.setRGB(i, j, createRGB(igs).getRGB());
@@ -137,9 +173,6 @@ public class GreyScaler {
         return c;
     }
 
-    public int[][] getGrayScale() {
-        return grayScaleMap;
-    }
 
     public BufferedImage getResultImage() {
         return resultImage;

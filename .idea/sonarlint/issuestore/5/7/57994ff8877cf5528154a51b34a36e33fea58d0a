@@ -1,23 +1,34 @@
 
-K
-java:S1068".Remove this unused "imageWidth" private field.(¥í‹ˆ8¯îÖ§/
-Q
-java:S1068"/Remove this unused "imageHeight" private field.(›ŒğÎüÿÿÿÿ8¯îÖ§/
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(®•Ÿ½ıÿÿÿÿ8ó¾­©ª/
 i
-java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8§…ÿ‹¥/
-|
-java:S1450"ZRemove the "imageHeight" field and declare it as a local variable in the relevant methods.(›ŒğÎüÿÿÿÿ8¯îÖ§/
-E	java:S1080")Either remove or fill this block of code.(ï­£Ä8§…ÿ‹¥/
-W
-java:S2209$"5Change this instance-reference to a static reference.(ÕÙúÿÿÿÿ8×…œæ§/
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8§…ÿ‹¥/
+†
+java:S1488-"dImmediately return this expression instead of assigning it to the temporary variable "blendedTxtre".(ÕÙúÿÿÿÿ8Á£°¬ª/
+E
+java:S1148J"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8şğá¬ª/
+f
+java:S2147I"DCombine this catch with the one at line 71, which has the same body.(åşŒóùÿÿÿÿ8şğá¬ª/
+c
+java:S2142G"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ó¾­©ª/
+R
+java:S2209<"5Change this instance-reference to a static reference.(’£ª…8õãü¬ª/
+E
+java:S1148H"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ó¾­©ª/
 J
-java:S1481)".Remove this unused "stokeLine" local variable.(—’Å8›ñÕü§/
-W
-java:S2209+"5Change this instance-reference to a static reference.(£¶²…üÿÿÿÿ8¬»Şü§/
-Q
-java:S2209)"5Change this instance-reference to a static reference.(—’Å8›ñÕü§/
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
-H
-java:S2440("&Remove this instantiation of "Stroke".(œˆËğşÿÿÿÿ8›ñÕü§/
+java:S14813".Remove this unused "stokeLine" local variable.(—’Å8Ş±¬ª/
 v
-java:S1450"YRemove the "imageWidth" field and declare it as a local variable in the relevant methods.(¥í‹ˆ8¯îÖ§/
+java:S1450"YRemove the "imageWidth" field and declare it as a local variable in the relevant methods.(¥í‹ˆ8¯îÖ§/
+K
+java:S1068".Remove this unused "imageWidth" private field.(¥í‹ˆ8¯îÖ§/
+|
+java:S1450"ZRemove the "imageHeight" field and declare it as a local variable in the relevant methods.(›ŒğÎüÿÿÿÿ8¯îÖ§/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+W
+java:S2209-"5Change this instance-reference to a static reference.(ÕÙúÿÿÿÿ8ĞÊ¯¬ª/
+Q
+java:S22093"5Change this instance-reference to a static reference.(—’Å8Ş±¬ª/
+E	java:S108F")Either remove or fill this block of code.(ï­£Ä8ó¾­©ª/
+Q
+java:S1068"/Remove this unused "imageHeight" private field.(›ŒğÎüÿÿÿÿ8½ä‚¦ª/
+H
+java:S24402"&Remove this instantiation of "Stroke".(œˆËğşÿÿÿÿ8Ş±¬ª/

@@ -8,12 +8,12 @@ import java.awt.image.Kernel;
  *
  * @File 
  * @Author Emily Weilan Tao 
- * @Date July 6, 2021 
- * @Description 
- * @Since version-1.0
- * @Copyright Copyright (c) 2020
+ * @Date July 14, 2021
+ * @Description Add multithreading
+ * @Since version-1.1
+ * @Copyright Copyright (c) 2021
  */
-//TODO 高亮的地方画的不全
+
 public class Stroke {
     private static float[] kernel;
     private static float[] kernel1;
