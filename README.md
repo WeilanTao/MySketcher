@@ -9,7 +9,7 @@ Effect as follows:
 ![output 1](https://github.com/WeilanTao/YourSketcher/blob/main/resource/sample_output.PNG)
 
 
-![input 2]https://github.com/WeilanTao/MySketcher/blob/main/resource/mount.png
+![input 2](https://github.com/WeilanTao/MySketcher/blob/main/resource/mountain.png)
 ![output 2](https://github.com/WeilanTao/YourSketcher/blob/main/resource/mount.PNG)
 
 ![input 3](https://github.com/WeilanTao/YourSketcher/blob/main/resource/raider.png)
