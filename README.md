@@ -1,4 +1,4 @@
-# YourSketcher
+# MySketcher
 This program produces a pencil drawing effect to natural photography.
 
 Effect as follows:
