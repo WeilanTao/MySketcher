@@ -1,3 +1,5 @@
+package com.sketcher;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.LookupOp;
@@ -5,11 +7,10 @@ import java.awt.image.LookupTable;
 import java.awt.image.ShortLookupTable;
 
 /**
- *
- * @File 
- * @Author Emily Weilan Tao 
- * @Date July 6, 2021 
- * @Description 
+ * @File
+ * @Author Emily Weilan Tao
+ * @Date July 6, 2021
+ * @Description
  * @Since version-1.0
  * @Copyright Copyright (c) 2020
  */
@@ -32,12 +33,16 @@ public class Tone {
         counter = width * height;
         sum = 0;
 
-        //make a copy of the original picture
+        /**
+         *Make a copy of the original picture
+         */
         Graphics g = toBeTone.getGraphics();
         g.drawImage(input, 0, 0, null);
         g.dispose();
 
-        //adjustContract
+        /**
+         * adjustContract
+         */
         adjustContract();
     }
 
@@ -59,9 +64,7 @@ public class Tone {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 int red = ((toBeTone.getRGB(i, j)) & 0x00FF0000) >> 16;
-
                 sum += red;
-
             }
         }
         average = sum / counter;
@@ -70,14 +73,13 @@ public class Tone {
     private static short[] makeLookUpTable(int d) {
         short[] cT = new short[256];
         for (short i = 0; i < 256; i++) {
-            cT[i] = (short) ((i - average) * d + average*2 + 0.5);
+            cT[i] = (short) ((i - average) * d + average * 2 + 0.5);
             if (cT[i] > 255) {
                 cT[i] = 255;
             }
             if (cT[i] < 0) {
                 cT[i] = 0;
             }
-
         }
 
         return cT;

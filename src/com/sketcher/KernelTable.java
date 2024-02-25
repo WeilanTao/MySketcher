@@ -1,19 +1,19 @@
+package com.sketcher;
 
 /**
- *
- * @File 
- * @Author Emily Weilan Tao 
+ * @File
+ * @Author Emily Weilan Tao
  * @Date July 6, 2021
- * @Description 
+ * @Description
  * @Since version-1.0
  * @Copyright Copyright (c) 2020
  */
-public class KernelTable  {
-    private static final float ninth = 1.0f / 9.0f;
+public class KernelTable {
+    private static final float NINTH = 1.0f / 9.0f;
     private static final float[] blurKernel = {
-            ninth, ninth, ninth,
-            ninth, ninth, ninth,
-            ninth, ninth, ninth
+            NINTH, NINTH, NINTH,
+            NINTH, NINTH, NINTH,
+            NINTH, NINTH, NINTH
     };
     private static final float[] KERNEL =
             {
@@ -69,7 +69,7 @@ public class KernelTable  {
         return KERNEL_3;
     }
 
-    public static float[] getSharp_kernel() {
+    public static float[] getSharpKernel() {
         return sharp_kernel;
     }
 }

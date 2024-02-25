@@ -1,3 +1,5 @@
+package com.sketcher;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferedImageOp;
@@ -5,22 +7,20 @@ import java.awt.image.ConvolveOp;
 import java.awt.image.Kernel;
 
 /**
- *
- * @File 
- * @Author Emily Weilan Tao 
+ * @File
+ * @Author Emily Weilan Tao
  * @Date July 14, 2021
- * @Description Add multithreading
+ * @Description produce outline/shape of items in an image
  * @Since version-1.1
  * @Copyright Copyright (c) 2021
  */
-
 public class Stroke {
     private static float[] kernel;
     private static float[] kernel1;
     private static float[] kernel2;
     private static float[] kernel3;
     private static float[] blurKernel;
-    private static float[] getSharp_kernel;
+    private static float[] getSharpKernel;
     private static int width;
     private static int height;
     private static BufferedImage result;
@@ -40,24 +40,21 @@ public class Stroke {
         kernel2 = kernelgenerater.getKernel2();
         kernel3 = kernelgenerater.getKernel3();
         blurKernel = kernelgenerater.getBlurKernel();
-        getSharp_kernel = kernelgenerater.getSharp_kernel();
+        getSharpKernel = kernelgenerater.getSharpKernel();
         inputImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         result = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-        strokeBlended=new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+        strokeBlended = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
 
         Graphics g = inputImage.getGraphics();
         g.drawImage(input, 0, 0, null);
         g.dispose();
 
-
         generateStroke();
-
     }
 
     private static void generateStroke() {
         BufferedImageOp blur_0 = new ConvolveOp(new Kernel(3, 3, kernel));
         BufferedImage outputImg_0 = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-
 
         BufferedImageOp blur_1 = new ConvolveOp(new Kernel(3, 3, kernel1));
         BufferedImage outputImg_1 = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
@@ -91,7 +88,7 @@ public class Stroke {
         }
 
         //combine the four directions
-        int rgbMap[][] = new int[width][height];
+        int[][] rgbMap = new int[width][height];
 
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
@@ -99,24 +96,24 @@ public class Stroke {
             }
         }
 
-        BufferedImage output_nosharp = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        BufferedImage outputNosharp = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
 
         for (int j = 0; j < height; j++) {
             for (int i = 0; i < width; i++) {
-                output_nosharp.setRGB(i, j, rgbMap[i][j]);
+                outputNosharp.setRGB(i, j, rgbMap[i][j]);
             }
         }
 
         //sharp the line
-        BufferedImage output_sharped = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        BufferedImage outputSharped = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
-        BufferedImageOp sharpline = new ConvolveOp(new Kernel(3, 3, getSharp_kernel));
-        sharpline.filter(output_nosharp, output_sharped);
+        BufferedImageOp sharpline = new ConvolveOp(new Kernel(3, 3, getSharpKernel));
+        sharpline.filter(outputNosharp, outputSharped);
 
         //gussian blur
         BufferedImageOp blur = new ConvolveOp(new Kernel(3, 3, blurKernel));
-        blur.filter(output_sharped, result);
+        blur.filter(outputSharped, result);
 
 
     }
@@ -150,26 +147,26 @@ public class Stroke {
         return min;
     }
 
-    public static BufferedImage blendStroke(BufferedImage textured){
+    public static BufferedImage blendStroke(BufferedImage textured) {
         //get a copy of the stroke img as the cover img
-        BufferedImage cover =  new BufferedImage(width,height,BufferedImage.TYPE_INT_ARGB);
+        BufferedImage cover = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         Graphics g = cover.getGraphics();
         g.drawImage(result, 0, 0, null);
         g.dispose();
 
-        int alpha =255;
+        int alpha = 255;
 
-        for(int i = 0;  i<width; i++){
-            for(int j =0; j<height; j++){
-                int rgb = cover.getRGB(i,j);
-                int r= (rgb & 0x00FF0000) >> 16;
-                if(r>150){
-                    alpha =0;
-                }else{
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
+                int rgb = cover.getRGB(i, j);
+                int r = (rgb & 0x00FF0000) >> 16;
+                if (r > 150) {
+                    alpha = 0;
+                } else {
                     alpha = 255;
                 }
-                rgb =(alpha<<24| (rgb & 0x00ffffff));
-                cover.setRGB(i,j,rgb);
+                rgb = (alpha << 24 | (rgb & 0x00ffffff));
+                cover.setRGB(i, j, rgb);
 
             }
         }

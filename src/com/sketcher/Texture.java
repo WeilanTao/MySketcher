@@ -1,9 +1,19 @@
+package com.sketcher;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * @File
+ * @Author Emily Weilan Tao
+ * @Date July 14, 2021
+ * @Description produce texture of a sketch
+ * @Since version-1.1
+ * @Copyright Copyright (c) 2021
+ */
 public class Texture {
     private BufferedImage inputImage;
     private BufferedImage txter;
@@ -24,10 +34,7 @@ public class Texture {
         g.drawImage(tonedInput, 0, 0, null);
         g.dispose();
         txter = ImageIO.read(new File("./resource/pattern.jpg"));
-
         combined = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_ARGB);
-
-
         texturePaint = new TexturePaint(txter, new Rectangle(0, 0, imageWidth, imageHeight));
 
         renderTexture();
