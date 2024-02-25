@@ -1,0 +1,14 @@
+
+7
+java:S1220""Move this file to a named package.8Τϊόπέ1
+R
+java:S2209("5Change this instance-reference to a static reference.(Ψώξ8κϊόπέ1
+H
+java:S2440,"&Remove this instantiation of "Stroke".(Λπώÿÿÿÿ8κϊόπέ1
+Q
+java:S2209-"5Change this instance-reference to a static reference.(—’Ε8λϊόπέ1
+J
+java:S1481-".Remove this unused "stokeLine" local variable.(—’Ε8λϊόπέ1
+R
+java:S22096"5Change this instance-reference to a static reference.(’£ª…8μϊόπέ1
+L	java:S106>"+Replace this use of System.out by a logger.(®•½ύÿÿÿÿ8μϊόπέ1

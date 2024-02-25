@@ -1,0 +1,29 @@
+
+†
+java:S1488-"dImmediately return this expression instead of assigning it to the temporary variable "blendedTxtre".(ΥΩϊÿÿÿÿ8½Άέπέ1
+7
+java:S1220""Move this file to a named package.8ΏΆέπέ1
+|
+java:S1450"ZRemove the "imageHeight" field and declare it as a local variable in the relevant methods.(›πΞόÿÿÿÿ8ΥΆέπέ1
+v
+java:S1450"YRemove the "imageWidth" field and declare it as a local variable in the relevant methods.(¥ν‹8ΥΆέπέ1
+f
+java:S2147I"DCombine this catch with the one at line 71, which has the same body.(εώσωÿÿÿÿ8άΆέπέ1
+{
+java:S2142G"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(δ Ή€8έΆέπέ1
+W
+java:S2209-"5Change this instance-reference to a static reference.(ΥΩϊÿÿÿÿ8ηΆέπέ1
+H
+java:S24402"&Remove this instantiation of "Stroke".(Λπώÿÿÿÿ8ηΆέπέ1
+Q
+java:S22093"5Change this instance-reference to a static reference.(—’Ε8θΆέπέ1
+J
+java:S14813".Remove this unused "stokeLine" local variable.(—’Ε8θΆέπέ1
+R
+java:S2209<"5Change this instance-reference to a static reference.(’£ª…8κΆέπέ1
+L	java:S106D"+Replace this use of System.out by a logger.(®•½ύÿÿÿÿ8μΆέπέ1
+E	java:S108F")Either remove or fill this block of code.(ο­£Δ8μΆέπέ1
+K
+java:S1068".Remove this unused "imageWidth" private field.(¥ν‹8ξΆέπέ1
+Q
+java:S1068"/Remove this unused "imageHeight" private field.(›πΞόÿÿÿÿ8ξΆέπέ1

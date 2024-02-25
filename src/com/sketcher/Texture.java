@@ -15,44 +15,44 @@ public class Texture {
 
 
     public Texture(BufferedImage tonedInput) throws IOException {
-        imageWidth=tonedInput.getWidth();
-        imageHeight=tonedInput.getHeight();
+        imageWidth = tonedInput.getWidth();
+        imageHeight = tonedInput.getHeight();
 
-        inputImage=new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_ARGB);
-        blank= new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_ARGB);
+        inputImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_ARGB);
+        blank = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_ARGB);
         Graphics g = inputImage.getGraphics();
         g.drawImage(tonedInput, 0, 0, null);
         g.dispose();
-        txter =  ImageIO.read(new File("./resource/pattern.jpg"));
+        txter = ImageIO.read(new File("./resource/pattern.jpg"));
 
-        combined=new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_ARGB);
+        combined = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_ARGB);
 
 
-        texturePaint=new TexturePaint(txter, new Rectangle(0, 0, imageWidth, imageHeight));
+        texturePaint = new TexturePaint(txter, new Rectangle(0, 0, imageWidth, imageHeight));
 
         renderTexture();
     }
 
-    private void renderTexture(){
+    private void renderTexture() {
         Graphics2D g2d = blank.createGraphics();
         g2d.setPaint(texturePaint);
         g2d.fill(new Rectangle(0, 0, imageWidth, imageHeight));
-        int alpha=255;
-        for(int i = 0; i<imageWidth; i++){
-            for(int j =0; j<imageHeight; j++){
-                int rgb = blank.getRGB(i,j);
+        int alpha = 255;
+        for (int i = 0; i < imageWidth; i++) {
+            for (int j = 0; j < imageHeight; j++) {
+                int rgb = blank.getRGB(i, j);
                 int red = (rgb & 0x00FF0000) >> 16;
 
-                int tonedrgb = inputImage.getRGB(i,j);
+                int tonedrgb = inputImage.getRGB(i, j);
                 int tonedred = (tonedrgb & 0x00FF0000) >> 16;
-                if(red>200 || tonedred >230 || tonedred< 30){
-                    alpha=0;
-                }else{
-                    alpha=255;
+                if (red > 200 || tonedred > 230 || tonedred < 30) {
+                    alpha = 0;
+                } else {
+                    alpha = 255;
                 }
 
-                rgb =(alpha<<24| (rgb & 0x00ffffff));
-                blank.setRGB(i,j,rgb);
+                rgb = (alpha << 24 | (rgb & 0x00ffffff));
+                blank.setRGB(i, j, rgb);
             }
         }
 
@@ -62,7 +62,7 @@ public class Texture {
         g1.dispose();
     }
 
-    public static BufferedImage getCombined() {
+    public BufferedImage getCombined() {
         return combined;
     }
 }
